@@ -80,6 +80,7 @@ class Money implements \JsonSerializable
         if (!is_string($value)) {
             throw new InvalidArgumentException('$value must be a string');
         }
+	error_log('static');
 
         $currency = self::handleCurrencyArgument($currency);
 
